@@ -1,0 +1,1 @@
+This is a [Twitter] Bootstrap version of my portfolio page.  I should write up real text someday instead of the placeholder Samuel L. Ipsum text I currently have.  But that is low on the backlog and I estimated it as a 1, meaning it'll NEVER get done!
