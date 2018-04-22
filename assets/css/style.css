@@ -21,11 +21,12 @@ This may or may not have been written in frustration at 2 AM.*/
     padding: 0;
     margin: 0;
     height: 80px;
-}
-
-.ob-container {
     position: relative;
 }
+
+/* .ob-container {
+    position: relative;
+} */
 
 .ob-toggler {
     position: relative;
@@ -168,26 +169,36 @@ background-color: #666 !important;
     .ob-logo {
         height: 80px;
         text-shadow: 2px 2px #333;
-        position: relative;
-        top: -40px;
+        /* top: -40px; */
         left: 0px;
     }
 
-    .ob-toggler {
-        position: relative;
-        top: -20px;
+    /* browser specific hack for Firefox 16 and up.  I feel so dirty */
+    @supports (-moz-appearance:meterbar) {
+        .ob-logo {
+            position: relative;
+            top: -40px;
+        }
+
+        .navbar-collapse {
+            position: relative;
+            top: -40px;
+        }
+
+        .navbar-toggler {
+            position: relative;
+            top: -20px;
+        }
     }
 
     .navbar-collapse {
-        position: relative;
-        top: -40px;
-        /* left: -20px; */
-        background-color: #eee;
-        z-index: 100;
-        padding-left: 20px;
-        border-style: solid;
-        border-width: 1px;
-        border-color: #ddd;
+    background-color: #eee;
+    /* firefox needs z-index, chrome doesn't */
+    z-index: 1;
+    padding-left: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ddd;
     }
 }
 
