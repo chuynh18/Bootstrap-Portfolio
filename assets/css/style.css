@@ -100,14 +100,8 @@ a:hover {
     font-size: 18px;
 }
 
-/* override Bootstrap rounding images inside cards because WHY WOULD YOU DO THAT WHEN THERE'S A HEADER ON TOP OF THE IMAGE IN THE CARD UGH
-I was able to find the correct class names thanks to dev tools - GENIUS! */
-.card-img-top, .card-img-bottom {
-    border-radius: 0 !important;
-}
-
-.portfoliohover:hover .card-img-top {
-    opacity: 0.7;
+.lightup {
+    border-radius: 3%;
 }
 
 .ob-connectwithme {
@@ -145,6 +139,28 @@ border-top-color: #4aaaa5;
 border-top-width: 5px;
 line-height: 55px; /* Vertically center the text there */
 background-color: #666 !important;
+}
+
+.thumbnail {
+    position: relative;
+}
+
+.captiontext {
+    position: relative;
+    transform: translate(0, -150%);
+    font-size: 18px;
+    color: white;
+    background-color: #4aaaa5;
+}
+
+.portfoliohover:hover .lightup {
+    opacity: 0.7;
+}
+
+.portfoliohover:hover .captiontext {
+    /* changing the font size in the bootstrap version is causing slightly janky behavior.  functionality... disabled! */
+    /* font-size: 20px; */
+    text-shadow: 2px 2px #333;
 }
 
 @media only screen and (max-width: 767px) {
