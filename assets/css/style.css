@@ -81,6 +81,16 @@ This may or may not have been written in frustration at 2 AM.*/
     width: 100%;
 }
 
+.ob-borderbottom {
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: #ccc;
+}
+
+.aboutmetext {
+    font-size: 18px;
+}
+
 a:hover {
     color: #1754a3 !important;
 }
@@ -167,6 +177,11 @@ background-color: #666 !important;
 @media only screen and (min-width: 991px) {
     .container {
         max-width: 960px;
+    }
+
+    .ob-contentsqueezer {
+        width: 900px !important;
+        margin: auto;
     }
 }
 
