@@ -49,6 +49,9 @@ body {
 
 .ob-contentcontainer {
     background-color: #eee;
+    border-style: solid;
+    border-color: #bbb;
+    border-width: 1px;
 }
 
 #ob-pagetitle {
@@ -138,5 +141,11 @@ background-color: #666 !important;
         border-style: solid;
         border-width: 1px;
         border-color: #ddd;
+    }
+}
+
+@media only screen and (min-width: 991px) {
+    .container {
+        max-width: 960px;
     }
 }
