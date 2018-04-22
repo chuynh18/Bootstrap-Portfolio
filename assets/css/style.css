@@ -2,6 +2,43 @@ body {
     background-image: url(../images/ricepaper_v3.png);
 }
 
+/* override bootstrap for the navbar */
+.ob-nav {
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #bbb;
+    background-color: #eee !important;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    height: 80px;
+}
+
+.ob-container {
+    position: relative;
+}
+
+/* override bootstrap for the logo aka my name */
+.ob-logo {
+    margin-top: 40px;
+    padding: 0 20px;
+    height: 80px;
+    text-shadow: 2px 2px #333;
+    position: absolute;
+    top: -60px;
+    left: 0px;
+    background-color: #4aaaa5;
+}
+
+#ob-logo {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #fff;
+    font-weight: bold;
+    font-size: 32px;
+    position: relative;
+    top: 20px;
+}
+
 .currentpage {
     text-shadow: 1px 1px #333 !important;
 }
