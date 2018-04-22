@@ -31,6 +31,7 @@
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    <!-- this is still black magic to me -->
                     <div class="navbar-collapse collapse" id="navbarToggler">
                         <ul class="nav navbar-nav ml-auto justify-content-end">
                             <li class="nav-item">
@@ -65,6 +66,7 @@
                         <div class="form-group">
                             <label for="yourNameHere">Name</label>
                             <input type="text" class="form-control" id="yourNameHere" aria-describedby="yourNameHere" placeholder="Enter your name">
+                            <!-- huehuehuehuehuehue -->
                             <small id="nameHere" class="form-text text-muted">Your real name is safe with me.  Promise!  That's a stronger statement than Zuckerberg would give you.</small>
                         </div>
                         <div class="form-group">
@@ -79,28 +81,36 @@
                         <button type="submit" class="btn btn-info">Submit</button>
                     </form>
                 </div>
-                <!-- social buttons -->
+                <!-- column for social buttons -->
                 <div class="col-md-4">
+                    <!-- make top of "connect with me" text flush with "name" to the left in the form  -->
                     <div class="mt-3 mb-3">
                         <h3 class="border-bottom">Connect with me</h3>
                     </div>
                     <div>
+                        <!-- putting the icons in columns inside the row below spaces out the social icons.  not perfect for all page widths but oh well -->
                         <div class="row text-center">
+                            <!-- mx-0 px-0 removes the default margining and padding that Bootstrap automatically gives columns -->
                             <div class="col mx-0 px-0">
+                                <!-- anyone still remember myspace?  lololol -->
                                 <a href="https://en.wikipedia.org/wiki/Myspace" target="_blank"><img src="assets/images/s1.png" alt="MySpace" /></a>
                             </div>
                             <div class="col mx-0 px-0">
+                                <!-- I think I remember this.  Google forced it on everyone.  or was that something else?  At least we have Google+ now! -->
                                 <a href="https://en.wikipedia.org/wiki/Google_Buzz" target="_blank"><img src="assets/images/s2.png" alt="Google Buzz" /></a>
                             </div>
                             <div class="col mx-0 px-0">
+                                <!-- i have legit never heard of yahoo 360 -->
                                 <a href="https://en.wikipedia.org/wiki/Yahoo!_360%C2%B0" target="_blank"><img src="assets/images/s3.png" alt="Yahoo 360" /></a>
                             </div>
                             <div class="col mx-0 px-0">
+                                <!-- any Brazilians in the house?! -->
                                 <a href="https://en.wikipedia.org/wiki/Orkut" target="_blank"><img src="assets/images/s4.png" alt="Orkut" /></a>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- end social buttons -->
             </div>
             <!-- end page contents -->
         </div>
