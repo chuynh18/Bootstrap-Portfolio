@@ -8,7 +8,7 @@ body {
     border-bottom-width: 2px;
     border-bottom-color: #bbb;
     background-color: #eee !important;
-    overflow: hidden;
+    /* overflow: hidden; */
     padding: 0;
     margin: 0;
     height: 80px;
@@ -18,15 +18,19 @@ body {
     position: relative;
 }
 
+.ob-toggler {
+    position: relative;
+}
+
 /* override bootstrap for the logo aka my name */
 .ob-logo {
     margin-top: 40px;
     padding: 0 20px;
     height: 80px;
     text-shadow: 2px 2px #333;
-    position: absolute;
-    top: -60px;
-    left: 0px;
+    position: relative;
+    top: -20px;
+    left: -20px;
     background-color: #4aaaa5;
 }
 
@@ -88,4 +92,27 @@ width: 100%;
 height: 60px;
 line-height: 60px; /* Vertically center the text there */
 background-color: #f5f5f5;
+}
+
+@media only screen and (max-width: 767px) {
+    .ob-logo {
+        margin-top: 40px;
+        padding: 0 20px;
+        height: 80px;
+        text-shadow: 2px 2px #333;
+        position: relative;
+        top: -40px;
+        left: -20px;
+        background-color: #4aaaa5;
+    }
+
+    .ob-toggler {
+        top: -20px;
+    }
+
+    #navbar-toggler {
+        background-color: #eee;
+        position: relative;
+        z-index: 1000;
+    }
 }
