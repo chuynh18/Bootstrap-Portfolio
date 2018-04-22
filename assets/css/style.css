@@ -1,6 +1,15 @@
 body {
     background-image: url(../images/ricepaper_v3.png);
+    font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
 }
+
+/* seriously, if we have to do this much work to override bootstrap
+to make Bootstrap-Portfolio look like Responsive-Portfolio, then
+FUCK BOOTSTRAP.
+
+JK, I Love Bootstrap And I Love Learning.  Love And Peace!
+
+This may or may not have been written in frustration at 2 AM.*/
 
 /* override bootstrap for the navbar */
 .ob-nav {
@@ -65,6 +74,7 @@ body {
 
 .currentpage {
     text-shadow: 1px 1px #ccc !important;
+    font-size: 18px;
 }
 
 .profilepic {
@@ -77,6 +87,7 @@ a:hover {
 
 .notcurrentpage {
     color: #777 !important;
+    font-size: 18px;
 }
 
 /* override Bootstrap rounding images inside cards because WHY WOULD YOU DO THAT WHEN THERE'S A HEADER ON TOP OF THE IMAGE IN THE CARD UGH
@@ -87,6 +98,15 @@ I was able to find the correct class names thanks to dev tools - GENIUS! */
 
 .portfoliohover:hover .card-img-top {
     opacity: 0.7;
+}
+
+.ob-connectwithme {
+    font-family: "Georgia", Times, Times New Roman, serif;
+    color: #4aaaa5;
+    font-weight: bold;
+    font-size: 24px;
+    text-shadow: 2px 2px #ccc !important;
+
 }
 
 .wiki:hover {
@@ -149,3 +169,5 @@ background-color: #666 !important;
         max-width: 960px;
     }
 }
+
+/* Hey, the instructions said to minimize media queries.  I didn't use too many, right?! */
