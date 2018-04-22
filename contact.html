@@ -21,33 +21,33 @@
     <body>
 
         <!-- begin navbar -->
-        <nav class="navbar navbar-expand-md navbar-light bg-info">
-                <!-- this container makes it so that the navbar shares the same margins as the page contents -->
-                <div class="container">
-                    <!-- bootstrap really cares about the order of divs.
-                    the below line was moved in front of <button> to make sure it stays on the left-hand side even when the menu is collapsed into the hamburger
-                    it used to be below <button>...</button>, which made it shift to the right hand side for phones/tablets -->
-                    <div class="navbar-brand text-white">Chris Huynh</div>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <!-- this is still black magic to me -->
-                    <div class="navbar-collapse collapse" id="navbarToggler">
-                        <ul class="nav navbar-nav ml-auto justify-content-end">
-                            <li class="nav-item">
-                                <a class="nav-link notcurrentpage" href="index.html">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link notcurrentpage" href="portfolio.html">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                    <div class="nav-link text-white currentpage">Contact</div>
-                            </li>
-                        </ul>
-                    </div>
+        <nav class="navbar navbar-expand-md navbar-light bg-info ob-nav">
+            <!-- this container makes it so that the navbar shares the same margins as the page contents -->
+            <div class="container ob-container">
+                <!-- bootstrap really cares about the order of divs.
+                the below line was moved in front of <button> to make sure it stays on the left-hand side even when the menu is collapsed into the hamburger
+                it used to be below <button>...</button>, which made it shift to the right hand side for phones/tablets -->
+                <div class="navbar-brand text-white ob-logo"><h1 id="ob-logo">Chris Huynh</h1></div>
+                <button class="navbar-toggler ob-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- this is still black magic to me -->
+                <div class="navbar-collapse collapse" id="navbarToggler">
+                    <ul class="nav navbar-nav ml-auto justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link notcurrentpage" href="index.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link notcurrentpage" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                                <div class="nav-link ob-activepage currentpage">Contact</div>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-            <!-- end navbar -->
+            </div>
+        </nav>
+        <!-- end navbar -->
 
         <!-- spacer between navbar and body -->
         <div class="m-4"></div>

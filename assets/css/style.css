@@ -43,8 +43,12 @@ body {
     top: 20px;
 }
 
+.ob-activepage {
+    color: #4aaaa5 !important;
+}
+
 .currentpage {
-    text-shadow: 1px 1px #333 !important;
+    text-shadow: 1px 1px #ccc !important;
 }
 
 .profilepic {
@@ -52,11 +56,11 @@ body {
 }
 
 a:hover {
-    color: white !important;
+    color: #1754a3 !important;
 }
 
 .notcurrentpage {
-    color: #ccc !important;
+    color: #777 !important;
 }
 
 /* override Bootstrap rounding images inside cards because WHY WOULD YOU DO THAT WHEN THERE'S A HEADER ON TOP OF THE IMAGE IN THE CARD UGH
@@ -101,7 +105,6 @@ background-color: #f5f5f5;
         position: relative;
         top: -40px;
         left: 0px;
-        background-color: #4aaaa5;
     }
 
     .ob-toggler {
