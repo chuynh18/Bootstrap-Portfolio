@@ -3,7 +3,7 @@ body {
 }
 
 .currentpage {
-    text-shadow: 2px 2px #333 !important;
+    text-shadow: 1px 1px #333 !important;
 }
 
 .profilepic {
@@ -11,9 +11,9 @@ body {
 }
 
 a:hover {
-    color: black !important;
+    color: white !important;
 }
 
 .notcurrentpage {
-    color: #666 !important;
+    color: #ccc !important;
 }

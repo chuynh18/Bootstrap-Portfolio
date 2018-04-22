@@ -21,27 +21,29 @@
     <body>
 
         <!-- begin navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-info">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-brand text-white">Chris Huynh</div>
-            
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link notcurrentpage" href="index.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link notcurrentpage" href="portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-item active">
-                    <div class="nav-link text-white currentpage">Contact</div>
-                </li>
-                </ul>
-            </div>
-        </nav>
-        <!-- end navbar -->
+        <nav class="navbar navbar-expand-md navbar-light bg-info">
+                <!-- this container makes it so that the navbar shares the same margins as the page contents -->
+                <div class="container">
+                    <div class="navbar-brand text-white">Chris Huynh</div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse w-100" id="navbarToggler">
+                        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link notcurrentpage" href="index.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link notcurrentpage" href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                    <div class="nav-link text-white currentpage">Contact</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- end navbar -->
 
         <!-- spacer between navbar and body -->
         <div class="m-4"></div>
@@ -50,6 +52,9 @@
         <div class="container bg-light border">
             <div class="row">
                 <div class="col-md-12 border-bottom"><h1>Contact me</h1></div>
+            </div>
+            <div class="row mt-4">
+
             </div>
             
         </div>
