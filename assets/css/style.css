@@ -147,10 +147,11 @@ background-color: #666 !important;
 
 .captiontext {
     position: relative;
-    transform: translate(0, -150%);
+    transform: translate(0, -135%);
     font-size: 18px;
     color: white;
     background-color: #4aaaa5;
+    padding: 2% 0;
 }
 
 .portfoliohover:hover .lightup {
