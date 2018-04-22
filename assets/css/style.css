@@ -18,8 +18,17 @@ a:hover {
     color: #ccc !important;
 }
 
-/* Sticky footer styles STOLEN!!! from https://getbootstrap.com/docs/4.0/examples/sticky-footer-navbar/sticky-footer-navbar.css
--------------------------------------------------- */
+/* override Bootstrap rounding images inside cards because WHY WOULD YOU DO THAT WHEN THERE'S A HEADER ON TOP OF THE IMAGE IN THE CARD UGH
+I was able to find the correct class names thanks to dev tools - GENIUS! */
+.card-img-top, .card-img-bottom {
+    border-radius: 0 !important;
+}
+
+.portfoliohover:hover .card-img-top {
+    opacity: 0.7;
+}
+
+/* Sticky footer styles STOLEN!!! from https://getbootstrap.com/docs/4.0/examples/sticky-footer-navbar/sticky-footer-navbar.css */
 html {
     position: relative;
     min-height: 100%;
@@ -39,4 +48,3 @@ height: 60px;
 line-height: 60px; /* Vertically center the text there */
 background-color: #f5f5f5;
 }
-  
