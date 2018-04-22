@@ -24,12 +24,15 @@
         <nav class="navbar navbar-expand-md navbar-light bg-info">
                 <!-- this container makes it so that the navbar shares the same margins as the page contents -->
                 <div class="container">
+                    <!-- bootstrap really cares about the order of divs.
+                    the below line was moved in front of <button> to make sure it stays on the left-hand side even when the menu is collapsed into the hamburger
+                    it used to be below <button>...</button>, which made it shift to the right hand side for phones/tablets -->
                     <div class="navbar-brand text-white">Chris Huynh</div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="navbar-collapse collapse w-100" id="navbarToggler">
-                        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                    <div class="navbar-collapse collapse" id="navbarToggler">
+                        <ul class="nav navbar-nav ml-auto justify-content-end">
                             <li class="nav-item">
                                 <a class="nav-link notcurrentpage" href="index.html">About</a>
                             </li>
@@ -51,8 +54,10 @@
         <!-- Container to constrain maximum width of page -->
         <div class="container bg-light border pb-2">
             <div class="row">
+                <!-- page title -->
                 <div class="col-md-12 border-bottom"><h1>Portfolio</h1></div>
             </div>
+            <!-- begin page contents and first row of cards.  Three cards per row -->
             <div class="row mt-4">
                 <div class="col-md-4">
                     <div class="card bg-secondary text-white mb-3">
@@ -85,6 +90,7 @@
                     </div>
                 </div>
             </div>
+            <!-- end first row of cards, begin second row -->
             <div class="row">
                 <div class="col-md-4">
                     <div class="card bg-secondary text-white mb-3">
@@ -117,9 +123,11 @@
                     </div>
                 </div>
             </div>
+            <!-- end second row and end page content -->
         </div>
+        <!-- end container -->
 
-        <!-- STICKY FOOTER STOLEN FROM https://getbootstrap.com/docs/4.0/examples/sticky-footer-navbar/ -->
+        <!-- STICKY FOOTER STOLEN FROM https://getbootstrap.com/docs/4.0/examples/sticky-footer-navbar/ requires some styling in style.css to work -->
         <footer class="footer bg-info">
             <div class="container text-center">
                 <span class="text-white">Copyright &copy;</span>
