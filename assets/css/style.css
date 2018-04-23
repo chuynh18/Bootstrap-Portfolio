@@ -24,9 +24,10 @@ This may or may not have been written in frustration at 2 AM.*/
     position: relative;
 }
 
-/* .ob-container {
+.ob-container {
     position: relative;
-} */
+    height: 120px;
+}
 
 .ob-toggler {
     position: relative;
@@ -79,7 +80,9 @@ This may or may not have been written in frustration at 2 AM.*/
 }
 
 .profilepic {
-    width: 100%;
+    width: 300px;
+    float: left;
+    margin-right: 20px;
 }
 
 .ob-borderbottom {
@@ -171,6 +174,21 @@ background-color: #666 !important;
         text-shadow: 2px 2px #333;
         /* top: -40px; */
         left: 0px;
+    }
+
+    /* fix chrome placing the hamburger menu pop out in a weird place but does not fix hamburger button getting pushed out of the view */
+    .collapsing {
+        position: relative;
+        top: -20px;
+    }
+
+    .show {
+        position: relative;
+        top: -20px;
+    }
+
+    .profilepic {
+        width: 100%;
     }
 
     /* browser specific hack for Firefox 16 and up.  I feel so dirty */
