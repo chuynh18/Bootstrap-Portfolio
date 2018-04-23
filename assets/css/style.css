@@ -26,6 +26,7 @@ This may or may not have been written in frustration at 2 AM.*/
 
 .ob-container {
     position: relative;
+    /* had to explicitly give this a height or else the hamburger menu would displace the navbar upon activation in Chrome */
     height: 120px;
 }
 
